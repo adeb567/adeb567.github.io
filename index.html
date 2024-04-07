@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amitabha Deb | Resume</title>
+    <title>Amitabha Deb</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,95 +22,83 @@
         </div>
     </header>
 
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <section>
-            <h2>Education</h2>
-            <div class="education-container">
-                <div class="education-item">
-                    <h3>Master of Science, Robotics (Computer Science)</h3>
-                    <p>University of Minnesota, Twin Cities <span>Aug 2022 - May 2024</span></p>
-                    <p>GPA: 3.95 / 4.00</p>
-                    <p><em>Subjects:</em> Machine Learning, Artificial Intelligence, Natural Language Processing, Intelligent Robotic Systems, Computer Vision, Deep Learning, Probabilistic Reasoning and Reinforcement Learning</p>
-                </div>
-                <div class="education-item">
-                    <h3>Bachelor of Technology, Electronics and Communication</h3>
-                    <p>National Institute of Technology, Silchar <span>Aug 2015 - May 2019</span></p>
-                    <p>GPA: 8.13 / 10.00</p>
-                    <p><em>Subjects:</em> Control Systems, Data Communication and Networks, Data Structures, Neural Networks and Fuzzy logic, Microprocessors</p>
+        <section id="about">
+            <div class="section-content">
+                <!-- Add your about section content here -->
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <div class="education-container">
+                    <!-- Education content goes here -->
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skills-item">
-                    <h3>Programming Languages:</h3>
-                    <p>Python, C, Java, SQL, R, MATLAB, HTML</p>
-                </div>
-                <div class="skills-item">
-                    <h3>Data Science Packages:</h3>
-                    <p>Scikit-Learn, Pandas, Numpy, PyTorch, Tensorflow, Keras, NLTK, Flask, OpenCV</p>
-                </div>
-                <div class="skills-item">
-                    <h3>Software and Tools:</h3>
-                    <p>ROS, Gazebo, Linux, Microsoft Office, Git, Jupyter Notebook</p>
-                </div>
-                <div class="skills-item">
-                    <h3>Soft Skills:</h3>
-                    <p>Communication, Analytical, Problem Solving, Agile, English(Fluent)</p>
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <!-- Skills content goes here -->
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Project Experience</h2>
-            <div class="project-container">
-                <div class="project-item">
-                    <h3>3D Semantic Reconstruction: <span>PyTorch, Scikit-Learn, UNet, COLMAP, kNN Classifier</span></h3>
-                    <p class="project-date">Fall 2023</p>
-                    <ul>
-                        <li>Performed a 2D segmentation with an IoU of 0.75 and generated 3D points from images.</li>
-                        <li>Constructed a pipeline from 2D semantic labels and 3D reconstructed points to estimate 3D semantic reconstruction.</li>
-                    </ul>
-                    <a href="#" class="project-link">Link to Project</a>
+        <section id="projects">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <div class="project-dropdown">
+                    <button class="dropdown-btn">3D Semantic Reconstruction</button>
+                    <div class="dropdown-content">
+                        <div class="project-item">
+                            <h3>3D Semantic Reconstruction: <span>PyTorch, Scikit-Learn, UNet, COLMAP, kNN Classifier</span></h3>
+                            <p class="project-date">Fall 2023</p>
+                            <ul>
+                                <li>Performed a 2D segmentation with an IoU of 0.75 and generated 3D points from images.</li>
+                                <li>Constructed a pipeline from 2D semantic labels and 3D reconstructed points to estimate 3D semantic reconstruction.</li>
+                            </ul>
+                            <div class="project-video">
+                                <!-- Add your project video here -->
+                            </div>
+                            <a href="#" class="project-link">Link to Project</a>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- Add more project items here -->
+                <!-- Add more project dropdowns here -->
             </div>
         </section>
 
-        <section>
-            <h2>Work Experience</h2>
-            <div class="work-container">
-                <div class="work-item">
-                    <h3>Software Engineer - <span>Java, SQL, Windows Server, React, Spring Boot</span></h3>
-                    <p>Bengaluru, India</p>
-                    <p><strong>Lowe's</strong> <span>July 2019 – August 2020</span></p>
-                    <ul>
-                        <li>Handled the functionality of the Payment Switch enabling 19M transactions per week.</li>
-                        <li>Upgraded the encryption for store-to-payment switch data flow as a part of the End-to-end encryption project.</li>
-                        <li>Enhanced Receipt Retrieval and Chargeback Management System applications.</li>
-                    </ul>
-                </div>
-                <div class="work-item">
-                    <h3>Teaching Assistant - <span>R, Statistics</span></h3>
-                    <p>Minneapolis, USA</p>
-                    <p><strong>Carlson School of Management, University of Minnesota</strong> <span>Aug 2023 – Present</span></p>
-                    <ul>
-                        <li>Facilitating hands-on usage of R, grading assignments, and communicating with the students.</li>
-                    </ul>
+        <section id="experience">
+            <div class="section-content">
+                <h2>Work Experience</h2>
+                <div class="work-container">
+                    <!-- Work experience content goes here -->
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Publications</h2>
-            <div class="publications-container">
-                <ul>
-                    <li>Published <em>"Comparative Study of Machine Learning Algorithms on Sentiment Analysis of Product Reviews"</em> in 4th International Conference on Information and Communication Technology for Competitive Strategies (ICTCS 2019), December 13th-14th, 2019.</li>
-                    <li>Published <em>"An Ensemble Approach to Hostility Detection in Hindi Tweets"</em> in 7th IFIP International Conference on Computer, Communication and Signal Processing, (ICCCSP 2023) January 4 – 6, 2023.</li>
-                </ul>
+        <section id="publications">
+            <div class="section-content">
+                <h2>Publications</h2>
+                <div class="publications-container">
+                    <!-- Publications content goes here -->
+                </div>
             </div>
         </section>
     </main>
@@ -119,5 +107,6 @@
         <p>&copy; 2023 Amitabha Deb. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
