@@ -1,59 +1,42 @@
+/* Reset styles */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #333;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 header {
-	background-color: #0077b6;
-	color: #fff;
-	padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
 }
 
-h1 {
-	font-size: 32px;
-	margin-bottom: 10px;
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav ul {
-	list-style: none;
-	display: flex;
+.photo-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 2rem;
 }
 
-nav ul li {
-	margin-right: 20px;
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
-}
-
-main {
-	max-width: 800px;
-	margin: 20px auto;
-	padding: 20px;
-}
-
-h2 {
-	font-size: 24px;
-	margin-bottom: 10px;
-}
-
-section {
-	margin-bottom: 30px;
-}
-
-footer {
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 20px;
-}
+.header-content h1 {
+    font-size: 2.5rem;
