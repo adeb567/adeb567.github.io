@@ -17,7 +17,58 @@
             padding: 20px;
             text-align: center;
         }
-        /* Add your custom styling for the skills section here */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .project-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .skills-category {
+            background-color: #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills-item {
+            background-color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
@@ -33,21 +84,52 @@
     </nav>
     <section id="skills">
         <!-- Include the content of your skills section here -->
-        <div class="project-card">
+        <div class="skills-category">
             <h3>Programming Languages</h3>
-            <p>Python, C, Java, SQL, R, MATLAB, HTML</p>
+            <div class="skills-list">
+                <div class="skills-item">Python</div>
+                <div class="skills-item">C</div>
+                <div class="skills-item">Java</div>
+                <div class="skills-item">SQL</div>
+                <div class="skills-item">R</div>
+                <div class="skills-item">MATLAB</div>
+                <div class="skills-item">HTML</div>
+            </div>
         </div>
-        <div class="project-card">
+        <div class="skills-category">
             <h3>Data Science Packages</h3>
-            <p>Scikit-Learn, Pandas, Numpy, PyTorch, Tensorflow, Keras, NLTK, Flask, OpenCV</p>
+            <div class="skills-list">
+                <div class="skills-item">Scikit-Learn</div>
+                <div class="skills-item">Pandas</div>
+                <div class="skills-item">Numpy</div>
+                <div class="skills-item">PyTorch</div>
+                <div class="skills-item">Tensorflow</div>
+                <div class="skills-item">Keras</div>
+                <div class="skills-item">NLTK</div>
+                <div class="skills-item">Flask</div>
+                <div class="skills-item">OpenCV</div>
+            </div>
         </div>
-        <div class="project-card">
+        <div class="skills-category">
             <h3>Software and Tools</h3>
-            <p>ROS, Gazebo, Linux, Microsoft Office, Git, Jupyter Notebook</p>
+            <div class="skills-list">
+                <div class="skills-item">ROS</div>
+                <div class="skills-item">Gazebo</div>
+                <div class="skills-item">Linux</div>
+                <div class="skills-item">Microsoft Office</div>
+                <div class="skills-item">Git</div>
+                <div class="skills-item">Jupyter Notebook</div>
+            </div>
         </div>
-        <div class="project-card">
+        <div class="skills-category">
             <h3>Soft Skills</h3>
-            <p>Communication, Analytical, Problem Solving, Agile, English(Fluent)</p>
+            <div class="skills-list">
+                <div class="skills-item">Communication</div>
+                <div class="skills-item">Analytical</div>
+                <div class="skills-item">Problem Solving</div>
+                <div class="skills-item">Agile</div>
+                <div class="skills-item">English (Fluent)</div>
+            </div>
         </div>
     </section>
     <footer>
