@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amitabha Deb - About Me</title>
     <style>
-        /* CSS Styling for About Me Page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,7 +16,37 @@
             padding: 20px;
             text-align: center;
         }
-        /* Add your custom styling for the about section here */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        #about {
+            padding: 20px;
+        }
+        .contact-details {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .contact-details li {
+            margin-right: 20px;
+        }
+        img.icon {
+            width: 30px; /* Adjust as needed */
+            height: 30px; /* Adjust as needed */
+        }
     </style>
 </head>
 <body>
@@ -25,7 +54,7 @@
         <h1>Amitabha Deb</h1>
     </header>
     <nav>
-        <a href="index.html">About</a>
+        <a href="#about">About</a>
         <a href="education.html">Education</a>
         <a href="skills.html">Skills</a>
         <a href="projects.html">Projects</a>
@@ -34,10 +63,16 @@
     <section id="about">
         <!-- Include the content of your about section here -->
         <h2>About Me</h2>
-        <img src="images/my_photo.JPG" alt="Amitabha Deb">
-        <p>I am a graduate student at the University of Minnesota, pursuing a Master's degree in Robotics (Computer Science)...</p>
+        <img src="images/my_photo.JPG" alt="Amitabha Deb" style="max-height: 4in;">
+        <p>I am a graduate student at the University of Minnesota, pursuing a Master's degree in Robotics (Computer Science). My academic background includes a Bachelor of Technology in Electronics and Communication from the National Institute of Technology, Silchar, where I achieved a GPA of 8.13/10.00. I have a strong proficiency in programming languages such as Python, C, Java, SQL, R, and MATLAB, as well as experience with data science packages like Scikit-Learn, Pandas, Numpy, PyTorch, Tensorflow, Keras, NLTK, Flask, and OpenCV. In my previous role as a Software Engineer at Lowe's in Bengaluru, India, I gained valuable experience in software development and problem-solving. I also have experience as a Teaching Assistant at the Carlson School of Management, University of Minnesota, where I honed my communication and analytical skills.</p>
         <h3>Contact Details</h3>
-        <!-- Include your contact details here -->
+        <ul class="contact-details">
+            <li><a href="https://github.com/yourgithub" target="_blank"><img src="github_icon.png" alt="GitHub" class="icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank"><img src="linkedin_icon.png" alt="LinkedIn" class="icon"></a></li>
+            <li><a href="mailto:deb00010@umn.edu"><img src="email_icon.png" alt="Email" class="icon"></a></li>
+            <li><a href="tel:+17633989561"><img src="phone_icon.png" alt="Phone" class="icon"></a></li>
+            <li><a href="https://github.com/yourgithub/your-resume.pdf" target="_blank"><img src="resume_icon.png" alt="Resume" class="icon"></a></li>
+        </ul>
     </section>
     <footer>
         &copy; Amitabha Deb
