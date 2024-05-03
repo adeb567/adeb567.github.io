@@ -1,49 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Amitabha Deb - Portfolio</title>
+   <style>
+       /* CSS Styling */
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+       }
+       header {
+           background-color: #333;
+           color: #fff;
+           padding: 20px;
+           text-align: center;
+       }
+       nav {
+           background-color: #f2f2f2;
+           overflow: hidden;
+       }
+       nav a {
+           float: left;
+           display: block;
+           color: #333;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+       }
+       nav a:hover {
+           background-color: #ddd;
+       }
+       section {
+           padding: 20px;
+       }
+       .project-card {
+           background-color: #f2f2f2;
+           padding: 20px;
+           margin-bottom: 20px;
+       }
+       .project-card h3 {
+           margin-top: 0;
+       }
+       .project-card p {
+           margin-bottom: 10px;
+       }
+       .contact-icon {
+           width: 24px;
+           height: 24px;
+           vertical-align: middle;
+           margin-right: 10px;
+       }
+       footer {
+           background-color: #333;
+           color: #fff;
+           padding: 20px;
+           text-align: center;
+       }
+   </style>
 </head>
 <body>
-    <header>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Your Name</h1>
-            <p>Brief introduction about you</p>
-            <button>View Portfolio</button>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <!-- Your skill icons or logos -->
-        </section>
-
-        <!-- Recent Projects Section -->
-        <section class="projects">
-            <h2>Recent Projects</h2>
-            <!-- Your project thumbnails or cards -->
-        </section>
-    </main>
-
-    <footer>
-        <!-- Your footer content -->
-    </footer>
+   <header>
+       <h1>Amitabha Deb</h1>
+   </header>
+   <nav>
+       <a href="#about">About</a>
+       <a href="#projects">Projects</a>
+       <a href="#contact">Contact</a>
+   </nav>
+   <section id="about">
+       <h2>About Me</h2>
+       <img src="your_photo.jpg" alt="Amitabha Deb" style="float: right; margin-left: 20px;">
+       <!-- Add your about me content here -->
+       <p>
+           <!-- Your about me content -->
+       </p>
+       <h3>Contact Details</h3>
+       <p>
+           <img src="github_icon.png" alt="GitHub" class="contact-icon">
+           <a href="https://github.com/your_github_username">GitHub</a>
+       </p>
+       <p>
+           <img src="linkedin_icon.png" alt="LinkedIn" class="contact-icon">
+           <a href="https://www.linkedin.com/in/your_linkedin_username">LinkedIn</a>
+       </p>
+       <p>
+           <img src="email_icon.png" alt="Email" class="contact-icon">
+           deb00010@umn.edu
+       </p>
+       <p>
+           <img src="phone_icon.png" alt="Phone" class="contact-icon">
+           +17633989561
+       </p>
+   </section>
+   <section id="projects">
+       <h2>Projects</h2>
+       <div class="project-card">
+           <h3>Project 1</h3>
+           <p>Project description goes here...</p>
+           <a href="https://github.com/your_github_username/project1">GitHub Link</a>
+       </div>
+       <div class="project-card">
+           <h3>Project 2</h3>
+           <p>Project description goes here...</p>
+           <a href="https://github.com/your_github_username/project2">GitHub Link</a>
+       </div>
+       <!-- Add more project cards as needed -->
+   </section>
+   <section id="contact">
+       <h2>Contact Me</h2>
+       <!-- Add your contact form or details here -->
+   </section>
+   <footer>
+       &copy; Amitabha Deb
+   </footer>
 </body>
 </html>
