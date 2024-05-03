@@ -58,6 +58,60 @@
             padding: 20px;
             text-align: center;
         }
+        #about img {
+            width: 4in;
+            height: 4in;
+            float: right;
+            margin-left: 20px;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: #333; /* Change color as needed */
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        #skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #f0f0f0; /* Default background color */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px; /* Flexbox properties for responsive layout */
+        }
+
+        /* Different colors for each skill category */
+        .project-card:nth-child(odd) {
+            background-color: #ffcccc; /* Light red */
+        }
+
+        .project-card:nth-child(even) {
+            background-color: #ccffcc; /* Light green */
+        }
+
+        /* Additional styling for h3 and p elements */
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .project-card p {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -72,29 +126,39 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
     </nav>
+    </head>
+<body>
     <section id="about">
         <h2>About Me</h2>
-        <img src="images/my_photo.JPG" alt="Amitabha Deb" style="float: right; margin-left: 20px;">
+        <img src="images/my_photo.JPG" alt="Amitabha Deb">
         <p>
             <!-- Your about me content -->
             I am a graduate student at the University of Minnesota, pursuing a Master's degree in Robotics (Computer Science). I have a strong background in Electronics and Communication Engineering from my undergraduate studies at the National Institute of Technology, Silchar. My interests lie in the fields of Machine Learning, Artificial Intelligence, Natural Language Processing, Intelligent Robotic Systems, Computer Vision, Deep Learning, Probabilistic Reasoning, and Reinforcement Learning.
         </p>
         <h3>Contact Details</h3>
         <p>
-            <img src="images/github_icon.png" alt="GitHub" class="contact-icon">
-            <a href="https://github.com/adeb567">GitHub</a>
+            <a href="https://github.com/adeb567" class="contact-link">
+                <img src="images/github_icon.png" alt="GitHub" class="contact-icon">
+                GitHub
+            </a>
         </p>
         <p>
-            <img src="images/linkedin_icon.png" alt="LinkedIn" class="contact-icon">
-            <a href="https://www.linkedin.com/in/amitabha-deb-0b617b119/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/amitabha-deb-0b617b119/" class="contact-link">
+                <img src="images/linkedin_icon.png" alt="LinkedIn" class="contact-icon">
+                LinkedIn
+            </a>
         </p>
         <p>
-            <img src="images/email_icon.png" alt="Email" class="contact-icon">
-            deb00010@umn.edu
+            <a href="mailto:deb00010@umn.edu" class="contact-link">
+                <img src="images/email_icon.png" alt="Email" class="contact-icon">
+                deb00010@umn.edu
+            </a>
         </p>
         <p>
-            <img src="images/phone_icon.png" alt="Phone" class="contact-icon">
-            +17633989561
+            <a href="tel:+17633989561" class="contact-link">
+                <img src="images/phone_icon.png" alt="Phone" class="contact-icon">
+                +17633989561
+            </a>
         </p>
     </section>
     <section id="education">
@@ -115,7 +179,6 @@
         </div>
     </section>
     <section id="skills">
-        <h2>Skills</h2>
         <div class="project-card">
             <h3>Programming Languages</h3>
             <p>Python, C, Java, SQL, R, MATLAB, HTML</p>
