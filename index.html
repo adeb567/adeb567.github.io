@@ -1,143 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Amitabha Deb - Portfolio</title>
-   <style>
-       /* CSS Styling */
-       body {
-           font-family: Arial, sans-serif;
-           margin: 0;
-           padding: 0;
-       }
-       header {
-           background-color: #333;
-           color: #fff;
-           padding: 20px;
-           text-align: center;
-       }
-       nav {
-           background-color: #f2f2f2;
-           overflow: hidden;
-       }
-       nav a {
-           float: left;
-           display: block;
-           color: #333;
-           text-align: center;
-           padding: 14px 16px;
-           text-decoration: none;
-       }
-       nav a:hover {
-           background-color: #ddd;
-       }
-       section {
-           padding: 20px;
-       }
-       .project-card {
-           background-color: #f2f2f2;
-           padding: 20px;
-           margin-bottom: 20px;
-       }
-       .project-card h3 {
-           margin-top: 0;
-       }
-       .project-card p {
-           margin-bottom: 10px;
-       }
-       .contact-icon {
-           width: 24px;
-           height: 24px;
-           vertical-align: middle;
-           margin-right: 10px;
-       }
-       footer {
-           background-color: #333;
-           color: #fff;
-           padding: 20px;
-           text-align: center;
-       }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amitabha Deb - Portfolio</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        section {
+            padding: 20px;
+        }
+        .project-card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        .project-card p {
+            margin-bottom: 10px;
+        }
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-   <header>
-       <h1>Amitabha Deb</h1>
-   </header>
-   <nav>
-       <a href="#about">About</a>
-       <a href="#about">Education</a>
-       <a href="#projects">Projects</a>
-       <a href="#projects">Experience</a>
-       <a href="#contact">Contact</a>
-   </nav>
-   <section id="about">
-       <h2>About Me</h2>
-       <img src="images/my_photo.jpg" alt="Amitabha Deb" style="float: right; margin-left: 20px;">
-       <!-- Add your about me content here -->
-       <p>
-           <!-- Your about me content -->
-          In the About section, there is a space for your photo and a placeholder for your about me content. The contact details are displayed with icons for GitHub, LinkedIn, email, and phone number.
-       </p>
-       <h3>Contact Details</h3>
-       <p>
-           <img src="images/github_icon.png" alt="GitHub" class="contact-icon">
-           <a href="https://github.com/your_github_username">GitHub</a>
-       </p>
-       <p>
-           <img src="images/linkedin_icon.png" alt="LinkedIn" class="contact-icon">
-           <a href="https://www.linkedin.com/in/your_linkedin_username">LinkedIn</a>
-       </p>
-       <p>
-           <img src="email_icon.png" alt="Email" class="contact-icon">
-           deb00010@umn.edu
-       </p>
-       <p>
-           <img src="phone_icon.png" alt="Phone" class="contact-icon">
-           +17633989561
-       </p>
-   </section>
-   <section id="projects">
-       <h2>Projects</h2>
-       <div class="project-card">
-           <h3>OFF-ROAD DRIVABLE AREA SEGMENTATION WITH CYCLEGAN</h3>
-           <p>In our project, we plan to employ CycleGAN as a pivotal tool for generating ground truth labels due to its unique ability to address the challenges associated with off-road data. CycleGAN facilitates the creation of synthetic off-road images and corresponding segmentation masks, effectively expanding the available dataset without the need for extensive manual labelling. By leveraging CycleGAN, we not only alleviate data scarcity issues but also enhance domain adaptation, making the segmentation model more robust to variations in off-road environments. This approach contributes to more costeffective and efficient data generation. It allows us to tackle the scarcity of labelled off-road data while ensuring the model’s capacity to perform effectively in a wide range of off-road scenarios.
-
-During the initial phase of our project, we focused on data exploration and understanding, as well as a comprehensive study of CycleGAN to ensure we have a solid grasp of its functioning and capabilities. This phase allowed us to identify specific dataset nuances and requirements unique to off-road scenarios. The dataset used is the ”Yamaha Off-Road Dataset” which has a lot of variability. In the later stages of the project, we shifted our attention to assessing the practical utility of the generated off-road images and segmentation masks. This evaluation involved rigorous testing of the model’s segmentation capabilities on an entirely unseen dataset, mimicking real-world scenarios that autonomous vehicles encounter. The goal is to measure the model’s generalization and ability to handle diverse off-road environments effectively. By carrying out these comprehensive testing procedures, we aim to validate the model’s robustness, thereby ensuring that it can reliably assist in off-road autonomous vehicle applications and contribute to the successful navigation of complex terrains.
-
-Contributors: Prakadeeswaran Manivannan, Harish Gnana Sekaran, Supreeth Gadamsetty & Amitabha Deb
-
-Advisor: Ju Sun</p>
-           <a href="https://github.com/adeb567/CSCI-5527-Project">GitHub Link</a>
-       </div>
-       <div class="project-card">
-           <h3>Project 2</h3>
-           <p>Project description goes here...</p>
-           <a href="https://github.com/your_github_username/project2">GitHub Link</a>
-       </div>
-             <div class="project-card">
-           <h3>Project 2</h3>
-           <p>Project description goes here...</p>
-           <a href="https://github.com/your_github_username/project2">GitHub Link</a>
-       </div>
-       <div class="project-card">
-           <h3>Project 2</h3>
-           <p>Project description goes here...</p>
-           <a href="https://github.com/your_github_username/project2">GitHub Link</a>
-       </div>
-       <div class="project-card">
-           <h3>Project 2</h3>
-           <p>Project description goes here...</p>
-           <a href="https://github.com/your_github_username/project2">GitHub Link</a>
-       </div>
-       <!-- Add more project cards as needed -->
-   </section>
-   <section id="contact">
-       <h2>Contact Me</h2>
-       <!-- Add your contact form or details here -->
-   </section>
-   <footer>
-       &copy; Amitabha Deb
-   </footer>
+    <header>
+        <h1>Amitabha Deb</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/my_photo.JPG" alt="Amitabha Deb" style="float: right; margin-left: 20px;">
+        <p>
+            <!-- Your about me content -->
+            I am a graduate student at the University of Minnesota, pursuing a Master's degree in Robotics (Computer Science). I have a strong background in Electronics and Communication Engineering from my undergraduate studies at the National Institute of Technology, Silchar. My interests lie in the fields of Machine Learning, Artificial Intelligence, Natural Language Processing, Intelligent Robotic Systems, Computer Vision, Deep Learning, Probabilistic Reasoning, and Reinforcement Learning.
+        </p>
+        <h3>Contact Details</h3>
+        <p>
+            <img src="images/github_icon.png" alt="GitHub" class="contact-icon">
+            <a href="https://github.com/adeb567">GitHub</a>
+        </p>
+        <p>
+            <img src="images/linkedin_icon.png" alt="LinkedIn" class="contact-icon">
+            <a href="https://www.linkedin.com/in/amitabha-deb-0b617b119/">LinkedIn</a>
+        </p>
+        <p>
+            <img src="images/email_icon.png" alt="Email" class="contact-icon">
+            deb00010@umn.edu
+        </p>
+        <p>
+            <img src="images/phone_icon.png" alt="Phone" class="contact-icon">
+            +17633989561
+        </p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="project-card">
+            <h3>Master of Science, Robotics (Computer Science)</h3>
+            <p>University of Minnesota, Twin Cities<br>
+            GPA: 3.95 / 4.00<br>
+            Aug 2022 - May 2024<br>
+            Subjects: Machine Learning, Artificial Intelligence, Natural Language Processing, Intelligent Robotic Systems, Computer Vision, Deep Learning, Probabilistic Reasoning and Reinforcement Learning</p>
+        </div>
+        <div class="project-card">
+            <h3>Bachelor of Technology, Electronics and Communication</h3>
+            <p>National Institute of Technology, Silchar<br>
+            GPA: 8.13 / 10.00<br>
+            Aug 2015 - May 2019<br>
+            Subjects: Control Systems, Data Communication and Networks, Data Structures, Neural Networks and Fuzzy logic, Microprocessors</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="project-card">
+            <h3>Programming Languages</h3>
+            <p>Python, C, Java, SQL, R, MATLAB, HTML</p>
+        </div>
+        <div class="project-card">
+            <h3>Data Science Packages</h3>
+            <p>Scikit-Learn, Pandas, Numpy, PyTorch, Tensorflow, Keras, NLTK, Flask, OpenCV</p>
+        </div>
+        <div class="project-card">
+            <h3>Software and Tools</h3>
+            <p>ROS, Gazebo, Linux, Microsoft Office, Git, Jupyter Notebook</p>
+        </div>
+        <div class="project-card">
+            <h3>Soft Skills</h3>
+            <p>Communication, Analytical, Problem Solving, Agile, English(Fluent)</p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Utility of Image Enhancement For Underwater Tasks: GAN, YOLOv8, Siamese Network</h3>
+            <p>Underwater images and their corresponding generated enhanced versions are evaluated using detection and estimation models. The success of the models on both images is recorded, providing insights into the necessity of enhancement.</p>
+        </div>
+        <div class="project-card">
+            <h3>Comparison of Reinforcement Learning Algorithms: Python, Dynamic Programming</h3>
+            <p>Compared the performance of Value Iteration, Policy Iteration and On-Policy First-Visit Monte Carlo Control Algorithm for Grid World MDP.</p>
+        </div>
+        <div class="project-card">
+            <h3>3D Semantic Reconstruction: PyTorch, Scikit-Learn, UNet, COLMAP, kNN Classifier</h3>
+            <p>Performed a 2D segmentation with an IoU of 0.75 and generated 3D points from images. Constructed a pipeline from 2D semantic labels and 3D reconstructed points to estimate 3D semantic reconstruction.</p>
+        </div>
+        <div class="project-card">
+            <h3>Off-road Driveable Area Segmentation: PyTorch, CycleGAN</h3>
+            <p>Trained the CycleGAN model on the "Yamaha-CMU-Off-Road" dataset to extend it. Employed the model for generating ground truth labels with a Dice score of 0.56.</p>
+            <a href="https://github.com/adeb567/CSCI-5527-Project">GitHub Link</a>
+        </div>
+        <div class="project-card">
+            <h3>Web App for FUnIE-GAN, Deep-SESR, SVAM: Python, flask, HTML, and CSS</h3>
+            <p>Created flask-based API and deployed the web app on the IRV lab server.</p>
+        </div>
+        <div class="project-card">
+            <h3>Box Sorting using Baxter Robot: Robot Operating System (ROS), OpenCV, Computer Vision</h3>
+            <p>Programmed Baxter robot to pick up color-coded boxes and place them on corresponding stacks.</p>
+        </div>
+        <div class="project-card">
+            <h3>Generalizability of FLAN-T5 Model Using Composite Task Prompting: Hugging Face, LLM, NLP</h3>
+            <p>Designed compositions of tasks to experiment with the generalizability of the model. Recognized the limitations caused by the prompt structure and several keywords.</p>
+        </div>
+        <div class="project-card">
+            <h3>Mobile Robot Path Planning in Diverse Terrain Environments: Python, A*, D*, RRT</h3>
+            <p>Evaluated the performance of search algorithms in a diverse 2d environment.</p>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="project-card">
+            <h3>Software Engineer - Java, SQL, Windows Server, React, Spring Boot</h3>
+            <p>Lowe's, Bengaluru, India<br>
+            July 2019 – August 2020<br>
+            • Handled the functionality of the Payment Switch enabling 19M transactions per week.<br>
+            • Upgraded the encryption for store-to-payment switch data flow as a part of the End-to-end encryption project.<br>
+            • Enhanced Receipt Retrieval and Chargeback Management System applications.</p>
+        </div>
+        <div class="project-card">
+            <h3>Teaching Assistant - R, Statistics</h3>
+            <p>Carlson School of Management, University of Minnesota, Minneapolis, USA<br>
+            Aug 2023 – Present<br>
+            • Facilitating hands-on usage of R, grading assignments, and communicating with the students.</p>
+        </div>
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="project-card">
+            <p>• Published "Comparative Study of Machine Learning Algorithms on Sentiment Analysis of Product Reviews" in 4th International Conference on Information and Communication Technology for Competitive Strategies (ICTCS 2019), December 13th-14th, 2019.</p>
+        </div>
+        <div class="project-card">
+            <p>• Published "An Ensemble Approach to Hostility Detection in Hindi Tweets" in 7th IFIP International Conference on Computer, Communication and Signal Processing, (ICCCSP 2023) January 4 – 6, 2023.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <h3>Contact Details</h3>
+        <p>
+            <img src="images/github_icon.png" alt="GitHub" class="contact-icon">
+            <a href="https://github.com/adeb567">GitHub</a>
+        </p>
+        <p>
+            <img src="images/linkedin_icon.png" alt="LinkedIn" class="contact-icon">
+            <a href="https://www.linkedin.com/in/amitabha-deb-0b617b119/">LinkedIn</a>
+        </p>
+        <p>
+            <img src="images/email_icon.png" alt="Email" class="contact-icon">
+            deb00010@umn.edu
+        </p>
+        <p>
+            <img src="images/phone_icon.png" alt="Phone" class="contact-icon">
+            +17633989561
+        </p>
+    </section>
+    <footer>
+        &copy; Amitabha Deb
+    </footer>
 </body>
 </html>
