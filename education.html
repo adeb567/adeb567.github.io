@@ -17,7 +17,43 @@
             padding: 20px;
             text-align: center;
         }
-        /* Add your custom styling for the education section here */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .university-logo {
+            max-width: 100px;
+            margin: 10px;
+        }
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .project-card h3 {
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +71,7 @@
         <!-- Include the content of your education section here -->
         <h2>Education</h2>
         <div class="project-card">
+            <img src="umn_logo.png" alt="University Logo" class="university-logo">
             <h3>Master of Science, Robotics (Computer Science)</h3>
             <p>University of Minnesota, Twin Cities<br>
             GPA: 3.95 / 4.00<br>
@@ -42,6 +79,7 @@
             Subjects: Machine Learning, Artificial Intelligence, Natural Language Processing, Intelligent Robotic Systems, Computer Vision, Deep Learning, Probabilistic Reasoning and Reinforcement Learning</p>
         </div>
         <div class="project-card">
+            <img src="nits_logo.png" alt="University Logo" class="university-logo">
             <h3>Bachelor of Technology, Electronics and Communication</h3>
             <p>National Institute of Technology, Silchar<br>
             GPA: 8.13 / 10.00<br>
