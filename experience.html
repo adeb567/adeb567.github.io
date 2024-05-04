@@ -41,6 +41,12 @@
             left: 0;
             width: 100%;
         }
+        #experience {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
         .project-card {
             background-color: #f9f9f9;
             padding: 20px;
@@ -59,6 +65,9 @@
             max-width: 100px;
             height: auto;
             margin-bottom: 10px; /* Add margin below the logo */
+        }
+        .experience-details {
+            grid-column: 1 / span 2; /* Span both columns */
         }
     </style>
 </head>
