@@ -51,6 +51,11 @@
         img.icon {
             width: 30px; /* Adjust as needed */
             height: 30px; /* Adjust as needed */
+            transition: transform 0.3s; /* Smooth transition for the transform property */
+        }
+        
+        img.icon:hover {
+            transform: scale(2); /* Scale the icon to double its size on hover */
         }
         .resume-download {
             list-style-type: none;
@@ -74,6 +79,16 @@
             left: 0;
             width: 100%;
         }
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 30%; /* Set the width of the card */
+        }
+        .card h3 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -94,18 +109,22 @@
             <p>I'm Amitabha, a Master's student in Robotics at the University of Minnesota. My background blends electronics, computer science, and robotics. I love diving deep into programming languages like Python, C, Java, and R, and I'm pretty handy with data science tools like PyTorch, TensorFlow, and scikit-learn.</p>
             <p>My passion lies in exploring the realms of machine learning, computer vision, natural language processing, and reinforcement learning. I've had some exciting project experiences! For instance, I've worked on enhancing underwater images using GANs, 3D reconstruction, off-road drivable area segmentation, and even developed web apps. I've also dabbled in robotic applications, such as using Baxter to sort boxes autonomously and planning paths for mobile robots.</p>
             <p>With a blend of technical skills and hands-on experience, I'm all set to take on challenging problems in robotics, computer vision, and beyond. I'm particularly interested in pushing the boundaries of what's possible with intelligent systems and creating innovative solutions that make a difference.</p>
-            <h3 align="center">Get my Resume</h3>
-            <ul class="resume-download">
-                <li><a href="https://github.com/adeb567/adeb567.github.io/blob/main/Amitabha_Deb_Resume.pdf" target="_blank"><img src="images/resume_icon.png" alt="Resume" class="icon"></a></li>
-            </ul>
-            <h3 align="center">Contact Details</h3>
-            <ul class="contact-details">
-                <li><a href="https://github.com/adeb567?tab=repositories" target="_blank"><img src="images/github_icon.png" alt="GitHub" class="icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/amitabha-deb-19594213a/" target="_blank"><img src="images/linkedIn_icon.png" alt="LinkedIn" class="icon"></a></li>
-                <li><a href="mailto:deb00010@umn.edu"><img src="images/email_icon.png" alt="Email" class="icon"></a></li>
-                <li><a href="tel:+17633989561"><img src="images/phone_icon.png" alt="Phone" class="icon"></a></li>
-                <li><a href="https://www.instagram.com/_amitabha.deb_/" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" class="icon"></a></li>
-            </ul>
+            <div class="card">
+                <h3 align="center">Get my Resume</h3>
+                <ul class="resume-download">
+                    <li><a href="https://github.com/adeb567/adeb567.github.io/blob/main/Amitabha_Deb_Resume.pdf" target="_blank"><img src="images/resume_icon.png" alt="Resume" class="icon"></a></li>
+                </ul>
+            </div>    
+            <div class="card">
+                <h3 align="center">Contact Details</h3>
+                <ul class="contact-details">
+                    <li><a href="https://github.com/adeb567?tab=repositories" target="_blank"><img src="images/github_icon.png" alt="GitHub" class="icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/amitabha-deb-19594213a/" target="_blank"><img src="images/linkedIn_icon.png" alt="LinkedIn" class="icon"></a></li>
+                    <li><a href="mailto:deb00010@umn.edu"><img src="images/email_icon.png" alt="Email" class="icon"></a></li>
+                    <li><a href="tel:+17633989561"><img src="images/phone_icon.png" alt="Phone" class="icon"></a></li>
+                    <li><a href="https://www.instagram.com/_amitabha.deb_/" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" class="icon"></a></li>
+                </ul>
+            </div>
         </div>
         <img src="images/my_photo.JPG" alt="Amitabha Deb">
     </section>
