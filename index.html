@@ -62,39 +62,35 @@
                 margin-top: 20px;
             }
         }
-        .contact-details, .resume-download {
-            list-style-type: none;
-            padding: 0;
-            margin: 0 auto; /* Center align the lists */
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .contact-details li, .resume-download li {
-            margin-right: 20px;
-        }
-        img.icon {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s;
-        }
-        img.icon:hover {
-            transform: scale(2);
-        }
         .card {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            margin: 0 auto 20px; /* Add bottom margin for spacing */
-            display: flex; /* Add this line */
-            align-items: center; /* Add this line */
-        }
-        
-        .card h3 {
-            text-align: center;
-            margin-bottom: 10px; /* Add some space between the heading and content */
-        }
+              background-color: #f9f9f9;
+              padding: 20px;
+              border-radius: 5px;
+              margin-bottom: 20px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
+            }
+            .card h3 {
+              text-align: center;
+              margin-bottom: 10px;
+            }
+            .card ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              justify-content: center; /* Center icons horizontally */
+            }
+            .card ul li {
+              margin-right: 10px; /* Adjust spacing between icons */
+            }
+            .card a img {
+              width: 30px;
+              height: 30px;
+              transition: transform 0.3s;
+            }
+            .card a img:hover {
+              transform: scale(2); /* Slight scale on hover */
+            }
     </style>
 </head>
 <body>
