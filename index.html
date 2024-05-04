@@ -88,6 +88,7 @@
             list-style: none;
             padding: 10px; /* Adjust padding to control spacing around icons */
             margin: 0;
+            display: flex; /* Use flexbox */
             justify-content: center; /* Center items horizontally */
             align-items: center; /* Center items vertically */
         }
@@ -95,12 +96,12 @@
         .card ul li {
             margin-right: 10px; /* Adjust spacing between icons */
         }
-        .card a img {
+        .card li a img {
           width: 30px;
           height: 30px;
           transition: transform 0.3s;
         }
-        .card a img:hover {
+        .card li a img:hover {
           transform: scale(2); /* Slight scale on hover */
         }
     </style>
