@@ -82,18 +82,25 @@
             margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
             max-width: 250px;
+            padding: 20px; /* Added padding to provide space around the content */
+            text-align: center; /* Center align the content within the card */
         }
         
         .card ul {
             list-style: none;
-            padding: 10px; /* Adjust padding to control spacing around icons */
+            padding: 0;
             margin: 0;
+            display: flex; /* Use flexbox */
             justify-content: center; /* Center items horizontally */
             align-items: center; /* Center items vertically */
         }
         
         .card ul li {
             margin-right: 10px; /* Adjust spacing between icons */
+        }
+        
+        .card ul li:last-child {
+            margin-right: 0; /* Remove margin from the last icon */
         }
         img.icon {
             width: 30px; /* Adjust as needed */
