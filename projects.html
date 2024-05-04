@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amitabha Deb - Projects</title>
-    <style>
+<style>
         /* CSS Styling for Projects Page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         header {
             background-color: #333;
@@ -32,28 +31,6 @@
         nav a:hover {
             background-color: #555;
         }
-        /* Add your custom styling for the projects section here */
-        .project-card {
-            background-color: #f2f2f2;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            text-align: left;
-        }
-        .project-card h3 {
-            margin-top: 0;
-        }
-        .project-card p {
-            margin-bottom: 10px;
-        }
-        .project-card a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .project-card a:hover {
-            text-decoration: underline;
-        }
         footer {
             background-color: #333;
             color: #fff;
@@ -63,6 +40,40 @@
             bottom: 0;
             left: 0;
             width: 100%;
+        }
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .project-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            margin: 0;
+        }
+        .thumbnail {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .project-content {
+            width: 60%;
+        }
+        .github-link {
+            display: flex;
+            align-items: center;
+        }
+        .github-link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -79,11 +90,21 @@
     </nav>
     <section id="projects">
         <!-- Include the content of your projects section here -->
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Utility of Image Enhancement For Underwater Tasks: GAN, YOLOv8, Siamese Network</h3>
-            <p>Underwater images and their corresponding generated enhanced versions are evaluated using detection and estimation models. The success of the models on both images is recorded, providing insights into the necessity of enhancement.</p>
+    <div class="project-card">
+        <div class="thumbnail">
+            <img src="project1.png" alt="Project Thumbnail">
         </div>
+        <div class="project-content">
+            <h3>Utility of Image Enhancement For Underwater Tasks: GAN, YOLOv8, Siamese Network</h3>
+            <p>Recently, learning-based image enhancement methods have demonstrated promising performance in underwater conditions. However, these models often come with a high computational cost. In this study, we aim to evaluate the relevance of image enhancement based on the specific task at hand. Additionally, we strive to develop a predictive method to determine whether image enhancement is necessary. Enhanced images were generated using ’Fast Underwater Image Enhancement for Improved Visual Perception’ (FUnIE- GAN) [1] and were evaluated quantitatively and visually. Further, bounding boxes were predicted using object detection models for both original and enhanced images. These predictions were analyzed and binary labels were created for the images to predict the necessity of image enhancement for the task. Despite our efforts, we have encountered challenges in devising an effective predictive method due to the limitations of the training set. This idea does show promise for further exploration with a specialized dataset to train all the models involved.</p>
+        </div>
+        <div class="github-link">
+            <span>Visit on GitHub:</span>
+            <a href="https://github.com/adeb567/ms-capstone">
+                <img src="images/github_icon.png" alt="GitHub Icon">
+            </a>
+        </div>
+    </div>
         <div class="project-card">
             <h3>Comparison of Reinforcement Learning Algorithms: Python, Dynamic Programming</h3>
             <p>Compared the performance of Value Iteration, Policy Iteration and On-Policy First-Visit Monte Carlo Control Algorithm for Grid World MDP.</p>
