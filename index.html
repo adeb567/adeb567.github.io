@@ -57,13 +57,11 @@
         }
         @media (max-width: 768px) { /* Apply styles for screens smaller than 768px */
             #about {
-                flex-direction: column; /* Stack items vertically */
-                align-items: center; /* Center align items horizontally */
+                grid-template-columns: 1fr; /* Change to a single column layout */
             }
         
             #about img {
                 max-width: 100%;
-                min-width: 2in
                 margin-left: 0;
                 margin-top: 20px;
             }
