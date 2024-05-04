@@ -37,15 +37,30 @@
             padding: 20px;
             padding-bottom: 50px;
             display: flex;
-            flex-direction: row; /* Change to row layout */
-            align-items: flex-start; /* Align items at the top */
-            justify-content: space-between; /* Distribute items horizontally */
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
         }
         
         #about img {
-            max-width: 30%; /* Adjust the width as needed */
+            max-width: 30%;
+            min-width: 250px; /* Set a minimum width for the image */
             margin-left: 20px;
-            align-self: center; /* Center the image vertically */
+            align-self: center;
+        }
+        
+        @media (max-width: 768px) { /* Apply styles for screens smaller than 768px */
+            #about {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center align items horizontally */
+            }
+        
+            #about img {
+                max-width: 100%;
+                min-width: 0; /* Reset the minimum width */
+                margin-left: 0;
+                margin-top: 20px;
+            }
         }
         .contact-details, .resume-download {
             list-style-type: none;
