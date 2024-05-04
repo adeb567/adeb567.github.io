@@ -55,7 +55,14 @@
             flex-direction: column;
         }
         .thumbnail img {
-            max-width: 240px;
+            max-width: 260px;
+            height: auto;
+            margin: 0 auto 10px;
+            border-radius: 5px; /* Added border radius */
+            display: block; /* Added display block */
+        }
+        .thumbnail iframe {
+            max-width: 260px;
             height: auto;
             margin: 0 auto 10px;
             border-radius: 5px; /* Added border radius */
@@ -65,6 +72,9 @@
             margin-top: auto;
             text-align: center; /* Center-align the link */
             font-weight: bold;
+        }
+        .github-link img:hover {
+            transform: scale(2); /* Scale the icon to double its size on hover */
         }
         .github-link a {
             color: #4169E1;
@@ -186,11 +196,38 @@
         </div>
         <div class="project-card">
             <div class="thumbnail">
-                <img src="images/project8.png" alt="Project Thumbnail">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0"></iframe>
             </div>
             <h3>Mobile Robot Path Planning in Diverse Terrain Environments: Python, A*, D*, RRT</h3>
             <p>Effective path planning is a crucial skill that these robots must possess to detect and make decisions based on various obstacles and topographical perturbations. In this project, two simple planning problems will be posed. The first problem will include robot path planning in an environment with only obstacles. This environment will be used to compare some more advanced pathplanning algorithms that build off of algorithms covered in class. The second problem will be determining an efficient method for path planning in an obstructed and uneven environment. Only A* will be used in this scenario and the diverse terrain will be represented by a custom cost map. Results from these two problems will highlight the advantages and disadvantages of more advanced search algorithms, and provide preliminary results for their operation in diverse terrain environments.</p>
-              
+        </div>
+                <div class="project-card">
+            <div class="thumbnail">
+                <img src="images/project9.png" alt="Project Thumbnail">
+            </div>
+            <h3>Comparative Study of Machine Learning Algorithms on Sentiment Analysis of Product Reviews: Python, scikit-learn, Tensorflow</h3>
+            <p>For a very long time, making a machine understand the natural language and process it to perform a creative task has been a problem of high priority to human. Classifying whether a product being sold is worth buying makes it easier for the buyer to make his decision. This also helps the seller to analyse his sales. In this paper, we have done a comparative analysis of different machine learning algorithms and studied how well each algorithm works in classifying human sentiments from natural language in text based product reviews.</p>
+            <p>Published in 4th International Conference on Information and Communication Technology for Competitive Strategies (ICTCS 2019), December 13th-14th, 2019.</p>
+            <div class="github-link">
+                <a href="https://drive.google.com/file/d/1eAC64-_D8h4y1crCfSIYQtd9zWKUi8_D/view?usp=drive_link" target="_blank">
+                    <img src="images/resume_icon.png" alt="GitHub">
+                    Paper Link
+                </a>
+            </div>
+        </div>
+                <div class="project-card">
+            <div class="thumbnail">
+                <img src="images/project10.png" alt="Project Thumbnail">
+            </div>
+            <h3>An Ensemble Approach to Hostility Detection in Hindi Tweets: Python, Transfer Learning, NLP</h3>
+            <p>In today’s world, social media platforms are prevalent in all walks of life. However, the content on these platforms is often created with hostile intent. With the increase of such hostile content in social media, there has arisen a need to effectively detect such posts so as take appropriate measures against them. Hence, extensive studies have been performed in this field for the English language, however, similar work is relatively sparse in the case of Indian languages like Hindi. The work done here introduces a transfer learning-based approach with an ensemble model on top for identifying and flagging posts of hostile intent on social media platforms written in the Hindi Devanagari script. For this purpose, we have leveraged the pre-trained Fasttext model trained on Hindi text. Our model achieves F1-scores of 76% on the Defamation class, 80% on the Fake class, 69% on the Hate class and 79% on the Offensive class on the provided test set.</p>
+            <p>Published in 7th IFIP International Conference on Computer, Communication and Signal Processing, (ICCCSP 2023) January 4 – 6, 2023.</p>
+            <div class="github-link">
+                <a href="https://drive.google.com/file/d/1O37MeJ1kdtifecaq4PFCMxXJMq03ZPdH/view?usp=drive_link" target="_blank">
+                    <img src="images/resume_icon.png" alt="GitHub">
+                    Paper Link
+                </a>
+            </div>
         </div>
     </section>
     <footer>
