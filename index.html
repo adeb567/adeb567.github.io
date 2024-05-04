@@ -37,60 +37,41 @@
             padding: 20px;
             padding-bottom: 50px;
             display: flex;
-            flex-direction: column; /* Stack items vertically */
-            align-items: right; /* Center align items horizontally */
+            flex-direction: row; /* Stack items horizontally */
+            align-items: flex-start; /* Align items at the start of the cross axis */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
         }
         #about img {
             max-height: 4in;
             margin-left: 20px;
+            order: 2; /* Set the order to appear after the text */
+            align-self: flex-start; /* Align the image at the start of the cross axis */
         }
-        .contact-details {
+        .contact-details, .resume-download {
             list-style-type: none;
             padding: 0;
+            margin: 0 auto; /* Center align the lists */
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-        .contact-details li {
+        .contact-details li, .resume-download li {
             margin-right: 20px;
         }
         img.icon {
-            width: 30px; /* Adjust as needed */
-            height: 30px; /* Adjust as needed */
-            transition: transform 0.3s; /* Smooth transition for the transform property */
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
         }
-        
         img.icon:hover {
-            transform: scale(2); /* Scale the icon to double its size on hover */
+            transform: scale(2);
         }
-        .resume-download {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        .resume-download li {
-            margin-right: 20px;
-        }
-        
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-        .project-card {
+        .card {
             background-color: #f9f9f9;
             padding: 20px;
             border-radius: 5px;
-            display: flex;
-            flex-direction: row;
+            margin: 10px;
+            width: calc(50% - 20px); /* Set the width to 50% minus margin */
         }
         .card h3 {
             text-align: center;
@@ -108,20 +89,20 @@
         <a href="projects.html">Projects</a>
         <a href="experience.html">Experience</a>
     </nav>
-    <section id="about" style="padding-bottom: 50px;">
+    <section id="about">
         <div>
             <h2>About Me</h2>
             <p>I'm Amitabha, a Master's student in Robotics at the University of Minnesota. My background blends electronics, computer science, and robotics. I love diving deep into programming languages like Python, C, Java, and R, and I'm pretty handy with data science tools like PyTorch, TensorFlow, and scikit-learn.</p>
             <p>My passion lies in exploring the realms of machine learning, computer vision, natural language processing, and reinforcement learning. I've had some exciting project experiences! For instance, I've worked on enhancing underwater images using GANs, 3D reconstruction, off-road drivable area segmentation, and even developed web apps. I've also dabbled in robotic applications, such as using Baxter to sort boxes autonomously and planning paths for mobile robots.</p>
             <p>With a blend of technical skills and hands-on experience, I'm all set to take on challenging problems in robotics, computer vision, and beyond. I'm particularly interested in pushing the boundaries of what's possible with intelligent systems and creating innovative solutions that make a difference.</p>
             <div class="card">
-                <h3 align="center">Get my Resume</h3>
+                <h3>Get my Resume</h3>
                 <ul class="resume-download">
                     <li><a href="https://github.com/adeb567/adeb567.github.io/blob/main/Amitabha_Deb_Resume.pdf" target="_blank"><img src="images/resume_icon.png" alt="Resume" class="icon"></a></li>
                 </ul>
             </div>    
             <div class="card">
-                <h3 align="center">Contact Details</h3>
+                <h3>Contact Details</h3>
                 <ul class="contact-details">
                     <li><a href="https://github.com/adeb567?tab=repositories" target="_blank"><img src="images/github_icon.png" alt="GitHub" class="icon"></a></li>
                     <li><a href="https://www.linkedin.com/in/amitabha-deb-19594213a/" target="_blank"><img src="images/linkedIn_icon.png" alt="LinkedIn" class="icon"></a></li>
