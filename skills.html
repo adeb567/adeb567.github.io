@@ -11,16 +11,13 @@
             margin: 0;
             padding: 0;
         }
-        header {
+        header, nav, footer {
             background-color: #333;
             color: #fff;
-            padding: 20px;
             text-align: center;
         }
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
+        header, nav {
+            padding: 20px 0;
         }
         nav a {
             color: white;
@@ -32,36 +29,17 @@
             background-color: #555;
         }
         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
         }
-        .project-card {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin: 10px auto; /* Center-align project card */
-            border-radius: 5px;
-            width: 70%; /* Adjusted width */
-            max-width: 600px; /* Added max-width */
-        }
-        .project-card h3 {
-            color: #333;
-            margin-bottom: 10px;
-            text-align: center; /* Center-align project card heading */
-        }
         .skills-category {
             background-color: #ddd;
             padding: 10px;
-            margin-bottom: 20px;
+            margin: 20px 0;
             border-radius: 5px;
-        }
-        .skills-category:first-child {
-            margin-top: 20px;
         }
         .skills-list {
             display: flex;
@@ -87,9 +65,9 @@
         <a href="projects.html">Projects</a>
         <a href="experience.html">Experience</a>
     </nav>
-    <section id="skills" style="padding: 50px;">
+    <section id="skills" style="padding: 20px;">
         <div class="skills-category">
-            <h3 align="center">Programming Languages</h3>
+            <h3>Programming Languages</h3>
             <div class="skills-list">
                 <div class="skills-item">Python</div>
                 <div class="skills-item">C</div>
@@ -101,7 +79,7 @@
             </div>
         </div>
         <div class="skills-category">
-            <h3 align="center">Data Science Packages</h3>
+            <h3>Data Science Packages</h3>
             <div class="skills-list">
                 <div class="skills-item">Scikit-Learn</div>
                 <div class="skills-item">Pandas</div>
@@ -115,7 +93,7 @@
             </div>
         </div>
         <div class="skills-category">
-            <h3 align="center">Software and Tools</h3>
+            <h3>Software and Tools</h3>
             <div class="skills-list">
                 <div class="skills-item">ROS</div>
                 <div class="skills-item">Gazebo</div>
@@ -126,7 +104,7 @@
             </div>
         </div>
         <div class="skills-category">
-            <h3 align="center">Soft Skills</h3>
+            <h3>Soft Skills</h3>
             <div class="skills-list">
                 <div class="skills-item">Communication</div>
                 <div class="skills-item">Analytical</div>
