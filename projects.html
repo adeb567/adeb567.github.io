@@ -111,21 +111,34 @@
                 <img src="images/project2.png" alt="Project Thumbnail">
             </div>
             <h3>Comparison of Reinforcement Learning Algorithms: Python, Dynamic Programming</h3>
-            <p>Compared the performance of Value Iteration, Policy Iteration and On-Policy First-Visit Monte Carlo Control Algorithm for Grid World MDP.</p>
+            <p>Recently, learning-based image enhancement methods have demonstrated promising performance in underwater conditions. However, these models often come with a high computational cost. In this study, we aim to evaluate the relevance of image enhancement based on the specific task at hand. Additionally, we strive to develop a predictive method to determine whether image enhancement is necessary. Enhanced images were generated using ’Fast Underwater Image Enhancement for Improved Visual Perception’ (FUnIE- GAN) [1] and were evaluated quantitatively and visually. Further, bounding boxes were predicted using object detection models for both original and enhanced images. These predictions were analyzed and binary labels were created for the images to predict the necessity of image enhancement for the task. Despite our efforts, we have encountered challenges in devising an effective predictive method due to the limitations of the training set. This idea does show promise for further exploration with a specialized dataset to train all the models involved.</p>
+            <div class="github-link">
+                <a href="https://github.com/adeb567/reinforcemnet-learning-algorithms" target="_blank">
+                    <img src="images/github_icon.png" alt="GitHub">
+                    GitHub Repository
+                </a>
+            </div>
         </div>
         <div class="project-card">
             <div class="thumbnail">
                 <img src="images/project3.png" alt="Project Thumbnail">
             </div>
             <h3>3D Semantic Reconstruction: PyTorch, Scikit-Learn, UNet, COLMAP, kNN Classifier</h3>
-            <p>Performed a 2D segmentation with an IoU of 0.75 and generated 3D points from images. Constructed a pipeline from 2D semantic labels and 3D reconstructed points to estimate 3D semantic reconstruction.</p>
+            <p>In this project, we conducted a 3D reconstruction of an environment while preserving the semantic information. We constructed a pipeline from 2D semantic labels and 3D reconstructed points to estimate 3D semantic reconstruction. Our methodology involves the generation of 3D sparse and dense point clouds using COLMAP, extraction of the segmentation masks using U-Net from the images provided, and finally employing a voting mechanism paired with a k-means algorithm to perform 3d semantic reconstruction.</p>
+            <div class="github-link">
+                <a href="https://github.com/adeb567/3d-Semantic-Reconstruction" target="_blank">
+                    <img src="images/github_icon.png" alt="GitHub">
+                    GitHub Repository
+                </a>
+            </div>
         </div>
         <div class="project-card">
             <div class="thumbnail">
                 <img src="images/project4.png" alt="Project Thumbnail">
             </div>
             <h3>Off-road Driveable Area Segmentation: PyTorch, CycleGAN</h3>
-            <p>Trained the CycleGAN model on the "Yamaha-CMU-Off-Road" dataset to extend it. Employed the model for generating ground truth labels with a Dice score of 0.56.</p>
+            <p>In our project, we plan to employ CycleGAN as a pivotal tool for generating ground truth labels due to its unique ability to address the challenges associated with off-road data. CycleGAN facilitates the creation of synthetic off-road images and corresponding segmentation masks, effectively expanding the available dataset without the need for extensive manual labelling. By leveraging CycleGAN, we not only alleviate data scarcity issues but also enhance domain adaptation, making the segmentation model more robust to variations in off-road environments. This approach contributes to more costeffective and efficient data generation. It allows us to tackle the scarcity of labelled off-road data while ensuring the model’s capacity to perform effectively in a wide range of off-road scenarios.</p>
+            <p>During the initial phase of our project, we focused on data exploration and understanding, as well as a comprehensive study of CycleGAN to ensure we have a solid grasp of its functioning and capabilities. This phase allowed us to identify specific dataset nuances and requirements unique to off-road scenarios. The dataset used is the ”Yamaha Off-Road Dataset” which has a lot of variability. In the later stages of the project, we shifted our attention to assessing the practical utility of the generated off-road images and segmentation masks. This evaluation involved rigorous testing of the model’s segmentation capabilities on an entirely unseen dataset, mimicking real-world scenarios that autonomous vehicles encounter. The goal is to measure the model’s generalization and ability to handle diverse off-road environments effectively. By carrying out these comprehensive testing procedures, we aim to validate the model’s robustness, thereby ensuring that it can reliably assist in off-road autonomous vehicle applications and contribute to the successful navigation of complex terrains.</p>
             <div class="github-link">
                 <a href="https://github.com/adeb567/CSCI-5527-Project" target="_blank">
                     <img src="images/github_icon.png" alt="GitHub">
@@ -134,20 +147,56 @@
             </div>
         </div>
         <div class="project-card">
+            <div class="thumbnail">
+                <img src="images/project5.png" alt="Project Thumbnail">
+            </div>
             <h3>Web App for FUnIE-GAN, Deep-SESR, SVAM: Python, flask, HTML, and CSS</h3>
-            <p>Created flask-based API and deployed the web app on the IRV lab server.</p>
+            <p>The image enhancement models often tend to have an overwhelming code base and is hard for people from other domains to access these models. For convenience and increased usage by people who want to use them for research and other applications, We have developed a flask-based app to easily interact with these models through the web and get the output. This lays down a platform to easily analyze the outputs of the model for future work.</p>
+              <div class="github-link">
+                <a href="https://github.com/adeb567/model-demos" target="_blank">
+                    <img src="images/github_icon.png" alt="GitHub">
+                    GitHub Repository
+                </a>
+            </div>
         </div>
         <div class="project-card">
+            <div class="thumbnail">
+                <img src="images/project6.png" alt="Project Thumbnail">
+            </div>
             <h3>Box Sorting using Baxter Robot: Robot Operating System (ROS), OpenCV, Computer Vision</h3>
-            <p>Programmed Baxter robot to pick up color-coded boxes and place them on corresponding stacks.</p>
+            <p>Robots have the potential to benefit us by increasing efficiency, reducing labour-intensive tasks, and allowing humans to focus on more complex and higher-value activities. Sorting objects at a large scale is an excellent example of this. In this project, we use Rethink Robotics’ Baxter robot with ROS and OpenCV to identify and sort boxes. We use object detection with colour recognition and inverse kinematics to accurately move the boxes. We achieved our goal of sorting and stacking cubes of three different colours. The work can be further extended to objects of multiple shapes and sizes.</p>
+              <div class="github-link">
+                <a href="https://github.com/adeb567/baxter_boxsort" target="_blank">
+                    <img src="images/github_icon.png" alt="GitHub">
+                    GitHub Repository
+                </a>
+            </div>
         </div>
         <div class="project-card">
+            <div class="thumbnail">
+                <img src="images/project7.png" alt="Project Thumbnail">
+            </div>
             <h3>Generalizability of FLAN-T5 Model Using Composite Task Prompting: Hugging Face, LLM, NLP</h3>
-            <p>Designed compositions of tasks to experiment with the generalizability of the model. Recognized the limitations caused by the prompt structure and several keywords.</p>
+            <p>This project aims to contribute to the field of natural language processing by evaluating the effectiveness of a widely used model "google/flan-t5" and exploring its potential for handling multiple tasks. We hope that the findings of this study will provide valuable insights and pave the way for further research in this area.</p>
+              <div class="github-link">
+                <a href="https://github.com/adeb567/CSCI5541-spring23-project" target="_blank">
+                    <img src="images/github_icon.png" alt="GitHub">
+                    GitHub Repository
+                </a>
+            </div>
         </div>
         <div class="project-card">
+            <div class="thumbnail">
+                <img src="images/project8.png" alt="Project Thumbnail">
+            </div>
             <h3>Mobile Robot Path Planning in Diverse Terrain Environments: Python, A*, D*, RRT</h3>
-            <p>Evaluated the performance of search algorithms in a diverse 2d environment.</p>
+            <p>This project aims to contribute to the field of natural language processing by evaluating the effectiveness of a widely used model "google/flan-t5" and exploring its potential for handling multiple tasks. We hope that the findings of this study will provide valuable insights and pave the way for further research in this area.</p>
+              <div class="github-link">
+                <a href="https://github.com/adeb567/CSCI5541-spring23-project" target="_blank">
+                    <img src="images/github_icon.png" alt="GitHub">
+                    GitHub Repository
+                </a>
+            </div>
         </div>
     </section>
     <footer>
