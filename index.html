@@ -46,19 +46,14 @@
         #about {
             padding: 20px;
             padding-bottom: 50px;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Create a two-column layout */
+            grid-gap: 20px; /* Add some space between the columns */
         }
-        
         #about img {
-            max-width: 30%;
-            min-width: 250px; /* Set a minimum width for the image */
-            margin-left: 20px;
-            align-self: center;
+            max-width: 100%;
+            margin-top: 20px;
         }
-        
         @media (max-width: 768px) { /* Apply styles for screens smaller than 768px */
             #about {
                 flex-direction: column; /* Stack items vertically */
