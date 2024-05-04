@@ -1,3 +1,4 @@
+User
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amitabha Deb - About Me</title>
     <style>
-        /* CSS Styling for Skills Page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,7 +13,6 @@
         }
         p {
             text-align: justify;
-            margin: 0 20px; /* Increase the margins */
         }
         header {
             background-color: #333;
@@ -38,42 +37,42 @@
         #about {
             padding: 20px;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Align items at the top */
-        }
-        #about div {
-            flex: 1; /* Allow the text to take up available space */
-            max-width: 50%; /* Limit the width to 50% */
         }
         #about img {
             max-height: 4in;
             margin-left: 20px;
         }
-        .contact-details,
-        .resume-download {
+        .contact-details {
+            list-style-type: none;
+            padding: 0;
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-        .card {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
-            width: 30%; /* Set the width of the card */
-            flex-shrink: 0; /* Prevent cards from shrinking */
-        }
-        .card h3 {
-            text-align: center;
+        .contact-details li {
+            margin-right: 20px;
         }
         img.icon {
             width: 30px; /* Adjust as needed */
             height: 30px; /* Adjust as needed */
             transition: transform 0.3s; /* Smooth transition for the transform property */
         }
+        
         img.icon:hover {
             transform: scale(2); /* Scale the icon to double its size on hover */
         }
+        .resume-download {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .resume-download li {
+            margin-right: 20px;
+        }
+        
         footer {
             background-color: #333;
             color: #fff;
@@ -83,6 +82,16 @@
             bottom: 0;
             left: 0;
             width: 100%;
+        }
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 30%; /* Set the width of the card */
+        }
+        .card h3 {
+            text-align: center;
         }
     </style>
 </head>
