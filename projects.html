@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="Selected robotics, computer vision, machine learning, NLP, and software projects by Amitabha Deb." name="description"/>
+  <meta content="#2f7d43" name="theme-color"/>
+  <title>
+   Projects · Amitabha Deb
+  </title>
+  <link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+ </head>
+ <body class="page-projects">
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header">
+   <div class="container nav-shell">
+    <a aria-label="Amitabha Deb home" class="brand" href="index.html">
+     <span class="brand-mark">
+      AD
+     </span>
+     <span class="brand-name">
+      Amitabha Deb
+     </span>
+    </a>
+    <nav aria-label="Primary navigation" class="site-nav" id="site-navigation">
+     <a class="nav-link" href="index.html">
+      About
+     </a>
+     <a class="nav-link" href="experience.html">
+      Experience
+     </a>
+     <a class="nav-link" href="education.html">
+      Education
+     </a>
+     <a class="nav-link" href="skills.html">
+      Skills
+     </a>
+     <a aria-current="page" class="nav-link is-active" href="projects.html">
+      Projects
+     </a>
+     <a class="nav-link" href="gallery.html">
+      Gallery
+     </a>
+    </nav>
+    <div class="nav-actions">
+     <button aria-label="Toggle color theme" class="square-button theme-toggle" title="Toggle color theme" type="button">
+      <span aria-hidden="true">
+       ◐
+      </span>
+     </button>
+     <button aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" class="square-button menu-toggle" type="button">
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+     </button>
+    </div>
+   </div>
+  </header>
+  <main id="main">
+   <section class="page-title page-title--small container reveal">
+    <h1>
+     Projects
+    </h1>
+   </section>
+   <section class="container project-section">
+    <div class="project-controls reveal">
+     <label class="project-search">
+      <span class="sr-only">
+       Search projects
+      </span>
+      <input data-project-search="" placeholder="Search projects or tools" type="search"/>
+     </label>
+     <div aria-label="Project filters" class="filter-row">
+      <button aria-pressed="true" class="filter-button is-active" data-project-filter="all" type="button">
+       All
+      </button>
+      <button aria-pressed="false" class="filter-button" data-project-filter="robotics" type="button">
+       Robotics
+      </button>
+      <button aria-pressed="false" class="filter-button" data-project-filter="vision" type="button">
+       Vision
+      </button>
+      <button aria-pressed="false" class="filter-button" data-project-filter="ml" type="button">
+       ML / NLP
+      </button>
+      <button aria-pressed="false" class="filter-button" data-project-filter="web" type="button">
+       Web
+      </button>
+     </div>
+     <span class="result-count" data-project-count="">
+      8 projects
+     </span>
+    </div>
+    <div class="projects-grid" data-project-grid="">
+     <article class="project-card reveal" data-categories="vision robotics ml" data-project-card="" id="semantic-reconstruction">
+      <img alt="3D Semantic Reconstruction project preview" decoding="async" height="730" src="images/optimized/project3.webp" width="1600"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Computer vision
+        </span>
+        <span>
+         Fall 2023
+        </span>
+       </div>
+       <h2>
+        3D Semantic Reconstruction
+       </h2>
+       <p class="project-summary">
+        Built a pipeline that combined 3D reconstruction with semantic labels from the original images.
+       </p>
+       <div class="project-metrics">
+        <span>
+         IoU 0.75
+        </span>
+        <span>
+         COLMAP + U-Net
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         I generated sparse and dense point clouds with COLMAP, created segmentation masks from the source images with U-Net, and mapped those 2D labels onto the reconstructed points. A voting/classification step combined repeated observations so the final 3D scene kept useful semantic labels.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          PyTorch
+         </span>
+         <span>
+          U-Net
+         </span>
+         <span>
+          COLMAP
+         </span>
+         <span>
+          kNN
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/3d-Semantic-Reconstruction" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="vision ml" data-project-card="" id="off-road">
+      <img alt="Off-road Driveable Area Segmentation project preview" decoding="async" height="895" src="images/optimized/project4.webp" width="1600"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Machine learning
+        </span>
+        <span>
+         Fall 2023
+        </span>
+       </div>
+       <h2>
+        Off-road Driveable Area Segmentation
+       </h2>
+       <p class="project-summary">
+        Used CycleGAN to create additional off-road training data and segmentation masks for difficult terrain.
+       </p>
+       <div class="project-metrics">
+        <span>
+         Dice 0.56
+        </span>
+        <span>
+         CycleGAN
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         Using the Yamaha Off-Road Dataset, our team trained CycleGAN to create synthetic terrain images and corresponding segmentation masks. The idea was to reduce manual labeling, improve domain adaptation, and then test how well the generated data held up on unseen terrain.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          PyTorch
+         </span>
+         <span>
+          CycleGAN
+         </span>
+         <span>
+          Segmentation
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/CSCI-5527-Project" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="robotics vision" data-project-card="" id="baxter">
+      <img alt="Box Sorting with Baxter project preview" decoding="async" height="1000" src="images/optimized/project6.webp" width="1284"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Robotics
+        </span>
+        <span>
+         Spring 2023
+        </span>
+       </div>
+       <h2>
+        Box Sorting with Baxter
+       </h2>
+       <p class="project-summary">
+        Used Baxter, ROS, and OpenCV to recognize color-coded boxes and sort them into stacks.
+       </p>
+       <div class="project-metrics">
+        <span>
+         3 box colors
+        </span>
+        <span>
+         ROS + OpenCV
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         OpenCV handled color recognition, while ROS and inverse kinematics handled the robot motion. The final setup sorted and stacked cubes in three colors; the same workflow could be extended to more object shapes and sizes.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          ROS
+         </span>
+         <span>
+          OpenCV
+         </span>
+         <span>
+          Computer vision
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/baxter_boxsort" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+         <a class="project-link" href="https://www.youtube.com/watch?v=wpD7BQyN3EY&amp;ab_channel=AmitabhaDeb" rel="noopener noreferrer" target="_blank">
+          Demo ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="web vision ml" data-project-card="" id="model-demos">
+      <img alt="Web App for FUnIE-GAN, Deep-SESR &amp; SVAM project preview" decoding="async" height="662" src="images/optimized/project5.webp" width="1540"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Web application
+        </span>
+        <span>
+         Summer 2023
+        </span>
+       </div>
+       <h2>
+        Web App for FUnIE-GAN, Deep-SESR &amp; SVAM
+       </h2>
+       <p class="project-summary">
+        Built a Flask web interface so research image-enhancement models were easier to run from a browser.
+       </p>
+       <div class="project-metrics">
+        <span>
+         Flask
+        </span>
+        <span>
+         3 model demos
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         FUnIE-GAN, Deep-SESR, and SVAM each had useful research code but were not especially convenient for someone outside the codebase. I wrapped the models in Flask apps so a user could submit an image, get the model output in the browser, and compare results more easily.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          Python
+         </span>
+         <span>
+          Flask
+         </span>
+         <span>
+          HTML
+         </span>
+         <span>
+          CSS
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/model-demos" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="ml nlp" data-project-card="" id="flan-t5">
+      <img alt="FLAN-T5 Composite Task Prompting project preview" decoding="async" height="558" src="images/optimized/project7.webp" width="1600"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Natural language processing
+        </span>
+        <span>
+         Spring 2023
+        </span>
+       </div>
+       <h2>
+        FLAN-T5 Composite Task Prompting
+       </h2>
+       <p class="project-summary">
+        Tested how FLAN-T5 responds when several task types are combined into a single prompt.
+       </p>
+       <div class="project-metrics">
+        <span>
+         FLAN-T5
+        </span>
+        <span>
+         Composite prompts
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         Our team built composite prompts around google/flan-t5 and reviewed how the model behaved as instructions were combined. The experiments helped show where prompt structure and particular keywords affected the model’s ability to generalize across tasks.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          Hugging Face
+         </span>
+         <span>
+          LLM
+         </span>
+         <span>
+          NLP
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/CSCI5541-spring23-project" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="vision ml research" data-project-card="" id="underwater">
+      <img alt="Utility of Image Enhancement for Underwater Tasks project preview" decoding="async" height="813" src="images/optimized/project1.webp" width="1600"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Computer vision
+        </span>
+        <span>
+         M.S. capstone
+        </span>
+       </div>
+       <h2>
+        Utility of Image Enhancement for Underwater Tasks
+       </h2>
+       <p class="project-summary">
+        Studied when underwater image enhancement is useful for downstream vision tasks and when the extra compute may not be worth it.
+       </p>
+       <div class="project-metrics">
+        <span>
+         FUnIE-GAN
+        </span>
+        <span>
+         YOLOv8
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         I enhanced underwater images with FUnIE-GAN, compared original and enhanced images visually and quantitatively, and ran object detection on both. Those results were turned into labels for a predictor that tried to decide when enhancement was worthwhile; the limited training set made that final prediction step the hardest part.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          GAN
+         </span>
+         <span>
+          YOLOv8
+         </span>
+         <span>
+          Siamese network
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/ms-capstone" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="robotics ml" data-project-card="" id="reinforcement-learning">
+      <img alt="Comparison of Reinforcement Learning Algorithms project preview" decoding="async" height="392" src="images/optimized/project2.webp" width="668"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Reinforcement learning
+        </span>
+        <span>
+         Course project
+        </span>
+       </div>
+       <h2>
+        Comparison of Reinforcement Learning Algorithms
+       </h2>
+       <p class="project-summary">
+        Implemented three reinforcement-learning methods for the same Markov decision process and compared the resulting policies.
+       </p>
+       <div class="project-metrics">
+        <span>
+         Value iteration
+        </span>
+        <span>
+         Policy iteration
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         I implemented value iteration, policy iteration, and on-policy first-visit Monte Carlo control for a defined MDP. Running the same problem through all three made it easier to compare planning-based updates with a method that learns from sampled experience.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          Python
+         </span>
+         <span>
+          Dynamic programming
+         </span>
+         <span>
+          Monte Carlo
+         </span>
+        </div>
+        <div class="project-links">
+         <a class="project-link" href="https://github.com/adeb567/reinforcemnet-learning-algorithms" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
+        </div>
+       </div>
+      </div>
+     </article>
+     <article class="project-card reveal" data-categories="robotics" data-project-card="" id="path-planning">
+      <img alt="Mobile Robot Path Planning in Diverse Terrain project preview" decoding="async" height="431" src="images/optimized/project8.webp" width="557"/>
+      <div class="project-body">
+       <div class="project-topline">
+        <span>
+         Motion planning
+        </span>
+        <span>
+         Course project
+        </span>
+       </div>
+       <h2>
+        Mobile Robot Path Planning in Diverse Terrain
+       </h2>
+       <p class="project-summary">
+        Compared path-planning methods in obstacle maps, then used A* with a custom cost map for uneven terrain.
+       </p>
+       <div class="project-metrics">
+        <span>
+         A* · D* · RRT
+        </span>
+        <span>
+         Custom cost map
+        </span>
+       </div>
+       <details class="project-details">
+        <summary>
+         Read the approach
+         <span aria-hidden="true">
+          ↘
+         </span>
+        </summary>
+        <p>
+         The first part compared A*, D*, and RRT-style planning in an environment with obstacles. The second focused on uneven terrain, where a custom cost map let A* account for topographical difficulty instead of treating every traversable cell the same.
+        </p>
+       </details>
+       <div class="project-footer">
+        <div class="tag-row">
+         <span>
+          Python
+         </span>
+         <span>
+          Planning
+         </span>
+         <span>
+          Cost maps
+         </span>
+        </div>
+        <div class="project-links">
+        </div>
+       </div>
+      </div>
+     </article>
+    </div>
+    <div class="project-empty" data-project-empty="">
+     <p>
+      No project matches that filter.
+     </p>
+     <button class="text-button" data-clear-projects="" type="button">
+      Show all
+     </button>
+    </div>
+   </section>
+   <section class="container earlier-work reveal">
+    <div class="simple-section-head">
+     <p class="kicker">
+      Earlier work
+     </p>
+     <h2>
+      Research &amp; publication
+     </h2>
+    </div>
+    <div class="paper-list">
+     <article>
+      <span class="paper-year">
+       2019
+      </span>
+      <div>
+       <h3>
+        Comparative Study of Machine Learning Algorithms on Sentiment Analysis of Product Reviews
+       </h3>
+       <p>
+        4th International Conference on Information and Communication Technology for Competitive Strategies.
+       </p>
+      </div>
+      <a href="https://drive.google.com/file/d/1eAC64-_D8h4y1crCfSIYQtd9zWKUi8_D/view?usp=drive_link" rel="noopener noreferrer" target="_blank">
+       Paper ↗
+      </a>
+     </article>
+     <article>
+      <span class="paper-year">
+       2023
+      </span>
+      <div>
+       <h3>
+        An Ensemble Approach to Hostility Detection in Hindi Tweets
+       </h3>
+       <p>
+        7th IFIP International Conference on Computer, Communication and Signal Processing.
+       </p>
+      </div>
+      <a href="https://drive.google.com/file/d/1O37MeJ1kdtifecaq4PFCMxXJMq03ZPdH/view?usp=drive_link" rel="noopener noreferrer" target="_blank">
+       Paper ↗
+      </a>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-row">
+    <span>
+     ©
+     <span data-current-year="">
+     </span>
+     Amitabha Deb
+    </span>
+    <div class="footer-links">
+     <a href="mailto:amitabha.deb@tmhna.com">
+      Email
+     </a>
+     <a href="https://www.linkedin.com/in/amitabha-deb-19594213a/" rel="noopener noreferrer" target="_blank">
+      LinkedIn
+     </a>
+     <a href="https://github.com/adeb567" rel="noopener noreferrer" target="_blank">
+      GitHub
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script defer="" src="assets/js/main.js">
+  </script>
+  <script defer="" src="assets/js/projects.js">
+  </script>
+ </body>
+</html>
+
