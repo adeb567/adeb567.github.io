@@ -180,12 +180,6 @@ window.GALLERY_ITEMS = [
     "height": 3024
   },
   {
-    "src": "gallery/2026/photo5904.webp",
-    "alt": "Gallery photo 25",
-    "width": 3024,
-    "height": 4032
-  },
-  {
     "src": "gallery/2026/photo5961.webp",
     "alt": "Gallery photo 26",
     "width": 1980,
